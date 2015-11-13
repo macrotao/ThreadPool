@@ -157,6 +157,7 @@ on 10-10-177-179
 config.status:765: creating Makefile
 config.status:765: creating src/Makefile
 config.status:765: creating config.h
+config.status:987: config.h is unchanged
 config.status:1039: executing depfiles commands
 
 ## ---------------- ##

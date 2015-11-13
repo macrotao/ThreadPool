@@ -1792,6 +1792,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 ac_config_headers="$ac_config_headers config.h"
 
+AC_CONFIG_AUC_DIR(_aux)
 am__api_version='1.11'
 
 ac_aux_dir=

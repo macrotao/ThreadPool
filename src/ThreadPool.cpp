@@ -53,7 +53,7 @@ void ThreadPool::stop() {
 // callback function of a thread
 void ThreadPool::run(int runNum) {
     while (m_isStarted) {
-        Task task();
+        Task task(getTask());
         if (task) {
             task(runNum);
         }
@@ -61,6 +61,13 @@ void ThreadPool::run(int runNum) {
 }
 
 void ThreadPool::addTask(const Task &task) {
+    while (m_isStarted && m_queue->size() >= m_queueSize) {
+        // waiting...
+    }
 
+    m_queue->push(task);
 }
 
+Task ThreadPool::getTask() {
+    while (m_isStarted && m_queue->empty())
+}

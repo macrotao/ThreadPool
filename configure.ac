@@ -4,7 +4,8 @@
 AC_PREREQ([2.63])
 AC_INIT([ThreadPool], [1.0.0], [htao_zhang@126.com])
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE([foreign -Wall -Werror])
+AC_CONFIG_AUX_DIR(_aux)
+AM_INIT_AUTOMAKE([foreign])
 
 # Checks for programs.
 AC_PROG_CXX
