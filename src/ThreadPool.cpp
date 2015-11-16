@@ -2,9 +2,9 @@
 #include <functional>
 #include <vector>
 
-#include "NonCopyable.h"
-#include "Thread.h"
-#inlcude "../include/ThreadPool.h"
+#include "../include/NonCopyable.h"
+#include "../include/Thread.h"
+#include "../include/ThreadPool.h"
 
 
 ThreadPool::ThreadPool(size_t queueSize, size_t poolSize)

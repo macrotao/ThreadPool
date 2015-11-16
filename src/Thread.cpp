@@ -13,6 +13,7 @@ Thread::Thread(const CALLBACK& callback)
 }
 
 Thread::~Thread() {
+
 }
 
 void Thread::start() {
